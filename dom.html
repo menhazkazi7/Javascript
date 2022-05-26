@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom explore</title>
+    <style>
+        article{
+            border: 2px solid tomato;
+        border-radius: 20px;
+        margin: 5px;
+        padding: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+       <section>
+       <article>
+
+          <h3>article-1</h3>
+           <p class="author">Author-1</p>
+           <p class="description ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eveniet aliquam magnam harum iste ullam mollitia. Alias, ex qui facilis cupiditate sequi dolorum, ipsam nihil saepe, quae laborum recusandae atque?</p>
+       </article>
+
+       <article>
+           <h3>article-2</h3>
+           <p class="author">Author-2</p>
+           <p class="description ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid cum, amet a vel vero aut ratione similique soluta, cupiditate eligendi quae, sapiente nesciunt non molestiae. Maxime reprehenderit ut itaque recusandae?</p>
+       </article>
+
+       <article>
+          <h3>article-3</h3>
+           <p class="author">Author-3</p>
+           <p class="description ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptatibus animi tenetur voluptatum iusto quia corrupti sit quam ullam natus qui laboriosam, recusandae earum. Beatae pariatur exercitationem dolor minima obcaecati.</p>
+       </article>
+
+       </section>
+    </main>
+    <script>
+        var authors = document.getElementsByClassName('author');
+        for(var i = 0; i < authors.length ; i++ ){
+            var element = authors[i];
+            console.log(element);
+        }
+    </script>
+
+</body>
+</html>
